@@ -44,7 +44,7 @@ impl Cat2960 {
     for (_oid, _vlan) in response.varbinds {
       match _vlan {
         Value::Integer(n) => {
-          if n as u32 == vlan {            
+          if n as u32 == vlan {
             let split = _oid.to_string().clone();
             let split = split.split(".");
             let portNum:u32 = split.last().unwrap().parse::<u32>().unwrap();

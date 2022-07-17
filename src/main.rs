@@ -10,9 +10,9 @@ fn main() {
   println!("State of port 15: {:?}", c.getPortState(15)); // specific port
 
   println!("Port State on Vlan 10: {:?}", c.getPortStateVlan(10)); // port on vlan (gets the first port detected on vlan)
-  println!("Port State on Vlan 10: {:?}", c.getPortStateVlan(20));
-  println!("Port State on Vlan 10: {:?}", c.getPortStateVlan(30));
-  println!("Port State on Vlan 10: {:?}", c.getPortStateVlan(40));
-  println!("Port State on Vlan 10: {:?}", c.getPortStateVlan(50));
-  println!("Port State on Vlan 10: {:?}", c.getPortStateVlan(60));
+  println!("Port State on Vlan 20: {:?}", c.getPortStateVlan(20));
+  println!("Port State on Vlan 30: {:?}", c.getPortStateVlan(30));
+  println!("Port State on Vlan 40: {:?}", c.getPortStateVlan(40));
+  println!("Port State on Vlan 50: {:?}", c.getPortStateVlan(50));
+  println!("Port State on Vlan 60: {:?}", c.getPortStateVlan(60));
 }
