@@ -1,3 +1,4 @@
+#[derive(Debug)]
 pub enum State {
   IDLE = 0,
   UP,

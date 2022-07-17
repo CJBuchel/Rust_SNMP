@@ -1,14 +1,15 @@
 use std::time::Duration;
 use snmp::{SyncSession, SnmpPdu};
 
+
 pub struct ProbeSNMP {
-  addr: String,
-  community: String,
+  addr:  String,
+  community:  String,
   session: SyncSession,
 }
 
 /**
- * Basic SNMP probe commands
+ * Basic SNMP Read only probe commands
  */
 impl ProbeSNMP {
   pub const TIMEOUT: Duration = Duration::from_secs(2);
